@@ -267,6 +267,9 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text);
+  border: none;
+  background: #f5f4fa;
+  border-radius: 4px;
 }
 
 .btn-second:hover,
@@ -310,6 +313,18 @@ ul {
   align-items: center;
 }  */
 
+.discription-card {
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.discription-image {
+  margin: 25px 100px;
+}
+
 .discription {
   display: flex;
   /* width: 1200px; */
@@ -325,7 +340,6 @@ ul {
 
 .discription-list {
   width: 270px;
-  height: 101px;
 }
 
 .discription-list:not(:last-child) {
@@ -419,9 +433,48 @@ ul {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  padding-bottom: 30px;
+  margin-bottom: 16px;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+}
+
+.soc {
+  width: 44px;
+  height: 44px;
+}
+
+.soc:not(:last-child) {
+  margin-right: 10px;
+}
+
+.link-soc {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.link-soc:hover,
+.link-soc:focus {
+  background-color: #2196f3;
+}
+
+.link-soc:hover .icon-soc,
+.link-soc:focus .icon-soc {
+  fill: #ffffff;
+}
+
+.icon-soc {
+  fill: #afb1b8;
+}
+
+.container-soc {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
 }
 
 .project {
@@ -459,6 +512,13 @@ ul {
   margin-bottom: 30px;
 }
 
+.card-item:hover,
+.card-item:focus {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 3px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
 .card-item:nth-child(3n) {
   margin-right: 0;
 }
@@ -482,12 +542,71 @@ ul {
   margin-right: 30px;
 }
 
+.section-company {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  margin-bottom: 50px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text);
+}
+
+.companys {
+  display: flex;
+  justify-content: center;
+}
+
+.list-company {
+  width: 170px;
+  height: 92px;
+}
+
+.list-company:not(:last-child) {
+  margin-right: 30px;
+}
+
+.link-company {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.link-company:hover,
+.link-company:focus {
+  color: #2196f3;
+  border-color: currentColor;
+}
+
+.link-company:hover .company-icon,
+.link-company:focus .company-icon {
+  fill: #2196f3;
+}
+
+.company-icon {
+  fill: #afb1b8;
+}
+
 /*------------FOOTER------------*/
 
 .footer {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo-footer {
@@ -532,18 +651,54 @@ ul {
   padding-bottom: 9px;
 }
 
-.box::before {
-  content: "Это текст в ::before";
-  font-size: 40px;
-  color: orange;
+.footer-text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  margin-bottom: 20px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
-.box::after {
-  content: "Это текст в ::after";
-  font-size: 30px;
-  color: teal;
+.footer-soc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.box:hover::after {
-  color: pink;
+.footer-list {
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.footer-list:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-link {
+  fill: var(--title);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-list:hover,
+.footer-list:focus {
+  background-color: #2196f3;
+}
+
+.footer-container {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.footer-logo-contact {
+  margin-right: 70px;
 }
