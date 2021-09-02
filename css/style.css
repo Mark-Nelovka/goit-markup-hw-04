@@ -133,20 +133,12 @@ ul {
   color: var(--logo);
 }
 
-/* .li:hover,
-.li:focus {
-  color: var(--logo);
-} */
-
-/* .li {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  text-decoration: none;
-  list-style: none;
-} */
-
 .item-connect {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -154,16 +146,6 @@ ul {
   text-decoration: none;
   list-style: none;
 }
-
-/* .item-connect::before {
-  content: "";
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  background-size: contain;
-  background-image: url("../images/sprite/envelope-hover.svg");
-  color: var(--main-text-color);
-} */
 
 .li:not(:last-child) {
   margin-right: 50px;
@@ -173,30 +155,6 @@ ul {
 .item-connect:focus {
   color: var(--logo);
 }
-
-/* .item-connect:hover::before,
-.item-connect:focus::before {
-  color: var(--logo);
-} */
-
-/* .mail::before {
-  content: "";
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  background-size: contain;
-  background-image: url("../images/sprite/envelope-hover.svg");
-} */
-
-/* .phone::before {
-  content: "";
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  background-size: contain;
-  background-image: url("../images/sprite/smartphone.svg");
-  background-repeat: no-repeat;
-} */
 
 .header-icon {
   fill: currentColor;
@@ -291,7 +249,7 @@ ul {
   font-weight: 500;
   font-size: 14px;
   padding: 6px 22px;
-  line-height: 1.14;
+  line-height: 1.62;
   letter-spacing: 0.02em;
   color: var(--text);
   text-decoration: none;
@@ -514,8 +472,8 @@ ul {
 
 .card-item:hover,
 .card-item:focus {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 3px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
 }
 
@@ -605,8 +563,6 @@ ul {
   padding-top: 60px;
   padding-bottom: 60px;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .logo-footer {
@@ -665,7 +621,6 @@ ul {
 .footer-soc {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .footer-list {
@@ -686,17 +641,19 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
 }
 
-.footer-list:hover,
-.footer-list:focus {
+.footer-link:hover,
+.footer-link:focus {
   background-color: #2196f3;
 }
 
 .footer-container {
   display: flex;
+  align-items: baseline;
   /* justify-content: center; */
-  align-items: center;
+  /* align-items: center; */
 }
 
 .footer-logo-contact {
